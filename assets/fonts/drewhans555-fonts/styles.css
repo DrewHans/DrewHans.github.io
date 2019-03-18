@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "drewhans555-fonts";
+  src:url("fonts/drewhans555-fonts.eot");
+  src:url("fonts/drewhans555-fonts.eot?#iefix") format("embedded-opentype"),
+    url("fonts/drewhans555-fonts.woff") format("woff"),
+    url("fonts/drewhans555-fonts.ttf") format("truetype"),
+    url("fonts/drewhans555-fonts.svg#drewhans555-fonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "drewhans555-fonts" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="drewhans555-"]:before,
+[class*=" drewhans555-"]:before {
+  font-family: "drewhans555-fonts" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.drewhans555-myanimelist:before {
+  content: "\e000";
+}
+.drewhans555-myanimelist-rounded:before {
+  content: "\e001";
+}

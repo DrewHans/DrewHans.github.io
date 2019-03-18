@@ -1,0 +1,38 @@
+/* --- Default Settings --- */
+body { 
+	font-family: 'Roboto', sans-serif; 
+}
+
+/* unvisited link */
+a:link, a.nav-link.color-custom:link { 
+	color: cornflowerblue; 
+	text-decoration: none; 
+}
+
+/* visited link */
+a:visited, a.nav-link.color-custom:visited { 
+	color: cornflowerblue; 
+	text-decoration: none; 
+}
+
+/* mouse over link */
+a:hover, a.nav-link.color-custom:hover { 
+	color: blue;
+	text-decoration: none; 
+}
+
+/* selected link */
+a:active, a.nav-link.color-custom:active { 
+	color: blue;
+	text-decoration: none; 
+}
+
+ul { 
+	list-style-type:disc; 
+}
+
+i.drewhans555-myanimelist-rounded {
+	position: relative;
+	top:5px;
+	font-size: 2.8em;
+}
