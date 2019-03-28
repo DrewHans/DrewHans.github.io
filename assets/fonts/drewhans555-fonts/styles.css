@@ -38,9 +38,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.drewhans555-myanimelist:before {
+.drewhans555-leetcode:before {
   content: "\e000";
 }
-.drewhans555-myanimelist-rounded:before {
+.drewhans555-myanimelist:before {
   content: "\e001";
+}
+.drewhans555-myanimelist-rounded:before {
+  content: "\e002";
+}
+.drewhans555-pixiv:before {
+  content: "\e003";
 }
