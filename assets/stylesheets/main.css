@@ -31,7 +31,10 @@ ul {
 	list-style-type:disc; 
 }
 
-i.drewhans555-myanimelist-rounded {
+/* styling for custom icons */
+i.drewhans555-leetcode,
+i.drewhans555-myanimelist-rounded,
+i.drewhans555-pixiv {
 	position: relative;
 	top:5px;
 	font-size: 2.8em;
