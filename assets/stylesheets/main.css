@@ -45,11 +45,20 @@ i.drewhans555-pixiv {
 .drewhans555-badge-android {
   background-color: #a4c639;
 }
+.drewhans555-badge-bootstrap {
+  background-color: #7843c4;
+}
 .drewhans555-badge-c {
   background-color: #608ceb;
 }
 .drewhans555-badge-cuda {
   background-color: #e50000;
+}
+.drewhans555-badge-csharp {
+  background-color: #6C429C;
+}
+.drewhans555-badge-dotnet {
+  background-color: #5C2D91;
 }
 .drewhans555-badge-java {
   background-color: #e50000;
