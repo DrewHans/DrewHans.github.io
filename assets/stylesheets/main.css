@@ -3,31 +3,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* nav-link color override */
+a.nav-link.color-custom {
+  color: #006eff;
+  text-decoration: none;
+}
+
 /* unvisited link */
-a:link,
-a.nav-link.color-custom:link {
-  color: blue;
+a:link {
+  color: #006eff;
   text-decoration: none;
 }
 
 /* visited link */
-a:visited,
-a.nav-link.color-custom:visited {
-  color: #1A0DAB;
+a:visited {
+  color: #0050fa;
   text-decoration: none;
 }
 
 /* mouse over link */
-a:hover,
-a.nav-link.color-custom:hover {
-  color: #1A0DAB;
+a:hover {
+  color: #0050fa;
   text-decoration: none;
 }
 
 /* selected link */
-a:active,
-a.nav-link.color-custom:active {
-  color: #1A0DAB;
+a:active {
+  color: #006eff;
   text-decoration: none;
 }
 
