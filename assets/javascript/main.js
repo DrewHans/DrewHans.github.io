@@ -1,5 +1,8 @@
-/* --- Return-To-Top jQuery --- */
+/* --- last-update text JavaScript --- */
+document.getElementById("last-update").innerHTML =
+  "&copy; Drew Hans, last update " + document.lastModified + "";
 
+/* --- Return-To-Top button jQuery --- */
 // when page is scrolled
 $(window).scroll(function() {
   // if page is scrolled 300px or more from top
