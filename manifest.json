@@ -1,0 +1,20 @@
+{
+  "short_name": "DrewHans555",
+  "name": "DrewHans555.github.io",
+  "icons": [
+    {
+      "src": "/assets/images/dh-icon-196.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/dh-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#343A40",
+  "display": "browser",
+  "theme_color": "#343A40"
+}
