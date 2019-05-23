@@ -1,34 +1,80 @@
 /* --- Default Settings --- */
-body { 
-	font-family: 'Roboto', sans-serif; 
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* unvisited link */
-a:link, a.nav-link.color-custom:link { 
-	color: cornflowerblue; 
-	text-decoration: none; 
+a:link,
+a.nav-link.color-custom:link {
+  color: cornflowerblue;
+  text-decoration: none;
 }
 
 /* visited link */
-a:visited, a.nav-link.color-custom:visited { 
-	color: cornflowerblue; 
-	text-decoration: none; 
+a:visited,
+a.nav-link.color-custom:visited {
+  color: cornflowerblue;
+  text-decoration: none;
 }
 
 /* mouse over link */
-a:hover, a.nav-link.color-custom:hover { 
-	color: blue;
-	text-decoration: none; 
+a:hover,
+a.nav-link.color-custom:hover {
+  color: blue;
+  text-decoration: none;
 }
 
 /* selected link */
-a:active, a.nav-link.color-custom:active { 
-	color: blue;
-	text-decoration: none; 
+a:active,
+a.nav-link.color-custom:active {
+  color: blue;
+  text-decoration: none;
 }
 
-ul { 
-	list-style-type:disc; 
+ul {
+  list-style-type: disc;
+}
+
+/* --- Return-To-Top Btn Settings --- */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }
 
 /* --- Custom Settings --- */
@@ -36,9 +82,9 @@ ul {
 i.drewhans555-leetcode,
 i.drewhans555-myanimelist-rounded,
 i.drewhans555-pixiv {
-	position: relative;
-	top:5px;
-	font-size: 2.8em;
+  position: relative;
+  top: 5px;
+  font-size: 2.8em;
 }
 
 /* styling for custom badges */
@@ -55,10 +101,10 @@ i.drewhans555-pixiv {
   background-color: #e50000;
 }
 .drewhans555-badge-csharp {
-  background-color: #6C429C;
+  background-color: #6c429c;
 }
 .drewhans555-badge-dotnet {
-  background-color: #5C2D91;
+  background-color: #5c2d91;
 }
 .drewhans555-badge-java {
   background-color: #e50000;

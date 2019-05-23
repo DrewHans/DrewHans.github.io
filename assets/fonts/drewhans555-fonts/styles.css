@@ -2,14 +2,13 @@
 
 @font-face {
   font-family: "drewhans555-fonts";
-  src:url("fonts/drewhans555-fonts.eot");
-  src:url("fonts/drewhans555-fonts.eot?#iefix") format("embedded-opentype"),
+  src: url("fonts/drewhans555-fonts.eot");
+  src: url("fonts/drewhans555-fonts.eot?#iefix") format("embedded-opentype"),
     url("fonts/drewhans555-fonts.woff") format("woff"),
     url("fonts/drewhans555-fonts.ttf") format("truetype"),
     url("fonts/drewhans555-fonts.svg#drewhans555-fonts") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
