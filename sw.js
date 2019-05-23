@@ -6,6 +6,7 @@ self.addEventListener("install", function(event) {
   event.waitUntil(
     caches.open("cache-v1").then(function(cache) {
       return cache.addAll([
+        "/assets/images/404.gif",
         "/assets/images/avidemux-idx2-file-maker-screenshot.png",
         "/assets/images/card-avidemux-idx2-file-maker.png",
         "/assets/images/card-kana2romaji-file-renamer.jpg",
