@@ -33,9 +33,10 @@ self.addEventListener("fetch", function(event) {
         // resource is not in cache, request it from the network
         return fetch(event.request)
           .then(function(response) {
-            // save the fetched resource to cache
+            // clone the fetched resource stream and save it to cache
+            let responseStreamClone = response.clone();
             caches.open("cache-v1").then(function(cache) {
-              cache.put(event.request, response.clone());
+              cache.put(event.request, responseStreamClone);
             });
             // return the fetched resource
             return response;
