@@ -6,28 +6,28 @@ body {
 /* unvisited link */
 a:link,
 a.nav-link.color-custom:link {
-  color: #1d7dd0;
+  color: blue;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited,
 a.nav-link.color-custom:visited {
-  color: #1d7dd0;
+  color: #1A0DAB;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover,
 a.nav-link.color-custom:hover {
-  color: blue;
+  color: #1A0DAB;
   text-decoration: none;
 }
 
 /* selected link */
 a:active,
 a.nav-link.color-custom:active {
-  color: blue;
+  color: #1A0DAB;
   text-decoration: none;
 }
 
