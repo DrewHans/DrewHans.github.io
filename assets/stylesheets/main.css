@@ -96,30 +96,39 @@ i.drewhans555-pixiv {
 .drewhans555-badge-android {
   background-color: #a4c639;
 }
+.drewhans555-badge-bash {
+  background-color: #89e051;
+}
 .drewhans555-badge-bootstrap {
   background-color: #7843c4;
 }
 .drewhans555-badge-c {
-  background-color: #608ceb;
+  background-color: #555555;
+}
+.drewhans555-badge-css {
+  background-color: #563d7c;
 }
 .drewhans555-badge-cuda {
-  background-color: #e50000;
+  background-color: #3a4e3a;
 }
 .drewhans555-badge-csharp {
-  background-color: #6c429c;
+  background-color: #178600;
 }
 .drewhans555-badge-dotnet {
   background-color: #5c2d91;
 }
+.drewhans555-badge-html {
+  background-color: #e34c26;
+}
 .drewhans555-badge-java {
-  background-color: #e50000;
+  background-color: #b07219;
 }
 .drewhans555-badge-javascript {
-  background-color: #fac552;
+  background-color: #f1e05a;
 }
 .drewhans555-badge-python {
-  background-color: #ffd242;
+  background-color: #3572a5;
 }
 .drewhans555-badge-racket {
-  background-color: #0288d1;
+  background-color: #3c5caa;
 }
