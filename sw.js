@@ -1,10 +1,27 @@
 /* --- service worker --- */
 
+const CACHENAME = "cache-v1";
+
+// never cache these resources, they change too frequently
+const URLBLACKLIST = [
+  "drewhans555.github.io/",
+  "drewhans555.github.io/index.html",
+  "drewhans555.github.io/manifest.json",
+  "drewhans555.github.io/sw.js",
+  "drewhans555.github.io/assets/javascript/main.js",
+  "drewhans555.github.io/assets/javascript/register-sw.js",
+  "drewhans555.github.io/assets/stylesheets/main.css",
+  "drewhans555.github.io/pages/about/",
+  "drewhans555.github.io/pages/about/index.html",
+  "drewhans555.github.io/pages/projects/",
+  "drewhans555.github.io/pages/projects/index.html"
+];
+
 // install event
 // fired when sw install is successfully completed
 self.addEventListener("install", function(event) {
   event.waitUntil(
-    caches.open("cache-v3").then(function(cache) {
+    caches.open(CACHENAME).then(function(cache) {
       return cache.addAll([
         "/assets/images/404.gif",
         "/assets/images/dh-icon.bmp",
@@ -27,17 +44,18 @@ self.addEventListener("fetch", function(event) {
         // resource is not in cache, request it from the network
         return fetch(event.request)
           .then(function(response) {
-            /* Optional: add files to cache when fetched from network
+            let resourceurl = event.request.url
+              .replace("http://", "")
+              .replace("https://", "");
 
-            // clone the fetched resource stream and save it to cache
-            let responseStreamClone = response.clone();
-            caches.open("cache-v3").then(function(cache) {
-              cache.put(event.request, responseStreamClone);
-            });
+            if (URLBLACKLIST.indexOf(resourceurl) === -1) {
+              // resource is not blacklisted & should be put in cache
+              let responseStreamClone = response.clone();
+              caches.open(CACHENAME).then(function(cache) {
+                cache.put(event.request, responseStreamClone);
+              });
+            }
 
-            */
-            console.log("sw.js fetch called.");
-            console.log("- event.request: " + event.request.url);
             // return the fetched resource
             return response;
           })
@@ -53,7 +71,7 @@ self.addEventListener("fetch", function(event) {
 // activate event
 // fires when updated sw.js takes control from old sw.js after update
 self.addEventListener("activate", function(event) {
-  let cacheWhitelist = ["cache-v3"];
+  let cacheWhitelist = [CACHENAME];
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
