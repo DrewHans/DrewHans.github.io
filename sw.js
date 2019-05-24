@@ -37,7 +37,7 @@ self.addEventListener("fetch", function(event) {
 
             */
             console.log("sw.js fetch called.");
-            console.log("- event.request: " + event.request);
+            console.log("- event.request: " + event.request.url);
             // return the fetched resource
             return response;
           })
