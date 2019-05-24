@@ -9,13 +9,7 @@ self.addEventListener("install", function(event) {
         "/assets/images/404.gif",
         "/assets/images/dh-icon.bmp",
         "/assets/images/dh-icon-196.png",
-        "/assets/images/drewhans.jpg",
-        "/assets/javascript/main.js",
-        "/assets/javascript/register-sw.js",
-        "/assets/stylesheets/main.css",
-        "/pages/about/index.html",
-        "/pages/projects/index.html",
-        "/index.html"
+        "/assets/images/drewhans.jpg"
       ]);
     })
   );
@@ -33,11 +27,16 @@ self.addEventListener("fetch", function(event) {
         // resource is not in cache, request it from the network
         return fetch(event.request)
           .then(function(response) {
+            /* Optional: add files to cache when fetched from network
+
             // clone the fetched resource stream and save it to cache
             let responseStreamClone = response.clone();
             caches.open("cache-v1").then(function(cache) {
               cache.put(event.request, responseStreamClone);
             });
+
+            */
+
             // return the fetched resource
             return response;
           })
@@ -46,6 +45,24 @@ self.addEventListener("fetch", function(event) {
             return caches.match("/assets/images/404.gif");
           });
       }
+    })
+  );
+});
+
+// activate event
+// fires when updated sw.js takes control from old sw.js after update
+self.addEventListener("activate", function(event) {
+  let cacheWhitelist = ["cache-v1"];
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            // cache is not whitelisted & should be deleted
+            return caches.delete(cacheName);
+          }
+        })
+      );
     })
   );
 });
