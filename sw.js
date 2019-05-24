@@ -4,7 +4,7 @@
 // fired when sw install is successfully completed
 self.addEventListener("install", function(event) {
   event.waitUntil(
-    caches.open("cache-v1").then(function(cache) {
+    caches.open("cache-v3").then(function(cache) {
       return cache.addAll([
         "/assets/images/404.gif",
         "/assets/images/dh-icon.bmp",
@@ -31,12 +31,13 @@ self.addEventListener("fetch", function(event) {
 
             // clone the fetched resource stream and save it to cache
             let responseStreamClone = response.clone();
-            caches.open("cache-v1").then(function(cache) {
+            caches.open("cache-v3").then(function(cache) {
               cache.put(event.request, responseStreamClone);
             });
 
             */
-
+            console.log("sw.js fetch called.");
+            console.log("- event.request: " + event.request);
             // return the fetched resource
             return response;
           })
@@ -52,7 +53,7 @@ self.addEventListener("fetch", function(event) {
 // activate event
 // fires when updated sw.js takes control from old sw.js after update
 self.addEventListener("activate", function(event) {
-  let cacheWhitelist = ["cache-v1"];
+  let cacheWhitelist = ["cache-v3"];
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
