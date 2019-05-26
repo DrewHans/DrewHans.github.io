@@ -92,8 +92,8 @@ a.btn-view-on-github {
 
 .row-trapezoid {
   background-color: lightgray;
-  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0% 92%);
-  clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0% 92%);
+  -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 94%);
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 94%);
   padding: 65px 10px;
 }
 
@@ -146,6 +146,9 @@ i.drewhans555-pixiv {
 }
 .drewhans555-badge-jquery {
   background-color: #333333;
+}
+.drewhans555-badge-p5js {
+  background-color: #ed225d;
 }
 .drewhans555-badge-popperjs {
   background-color: #ed582f;
