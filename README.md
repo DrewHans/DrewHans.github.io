@@ -1,7 +1,7 @@
 # DrewHans555.github.io
 
-![GitHub](https://img.shields.io/github/license/DrewHans555/DrewHans555.github.io.svg)
-![Website](https://img.shields.io/website/https/drewhans555.github.io.svg)
+[![GitHub][shield-img-license]](LICENSE)
+[![Website][shield-img-website]](https://drewhans555.github.io/)
 
 My personal hub on the web.
 
@@ -36,8 +36,11 @@ Progressive Web App compliance can by audited with Google Chrome's [Lighthouse](
 - [x] Provides a valid apple-touch-icon
 
 ## Third Party Resources:
-* Bootstrap 4.3.1
-* FontAwesome 5.8.2
-* jQuery 3.4.1
-* Popper.js 1.14.7
-* googleapis Roboto font
+* [Bootstrap](https://getbootstrap.com/) 4.3.1
+* [FontAwesome](https://fontawesome.com/) 5.8.2
+* [Google Fonts](https://fonts.google.com/specimen/Roboto) - Roboto
+* [jQuery](https://jquery.com/) 3.4.1
+* [Popper.js](https://popper.js.org/) 1.14.7
+
+[shield-img-license]: https://img.shields.io/github/license/DrewHans555/DrewHans555.github.io.svg
+[shield-img-website]: https://img.shields.io/website/https/drewhans555.github.io.svg
