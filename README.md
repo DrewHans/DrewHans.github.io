@@ -1,5 +1,8 @@
 # DrewHans555.github.io
 
+![GitHub](https://img.shields.io/github/license/DrewHans555/DrewHans555.github.io.svg)
+![Website](https://img.shields.io/website/https/drewhans555.github.io.svg)
+
 My personal hub on the web.
 
 ## Notable Features
