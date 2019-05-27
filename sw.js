@@ -23,10 +23,7 @@ self.addEventListener("install", function(event) {
   event.waitUntil(
     caches.open(CACHENAME).then(function(cache) {
       return cache.addAll([
-        "/assets/images/404.gif",
-        "/assets/images/dh-icon.bmp",
-        "/assets/images/dh-icon-196.png",
-        "/assets/images/drewhans.jpg"
+        "/assets/images/404.gif"
       ]);
     })
   );
