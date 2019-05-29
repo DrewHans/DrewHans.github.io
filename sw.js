@@ -1,6 +1,6 @@
 /* --- service worker --- */
 
-const CACHENAME = "cache-v2019-05-27";
+const CACHENAME = "cache-v2019-05-29";
 
 // never cache these resources, they change too frequently
 const URLBLACKLIST = [
