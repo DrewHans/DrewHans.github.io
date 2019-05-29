@@ -97,6 +97,14 @@ a.btn-view-on-github {
   padding: 65px 10px;
 }
 
+.appstore-logo {
+  height: 50px;
+}
+
+.language-logo {
+  width: 3em;
+}
+
 .technology-logo {
   width: 75px;
 }
