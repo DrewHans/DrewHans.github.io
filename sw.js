@@ -1,6 +1,6 @@
 /* --- service worker --- */
 
-const CACHENAME = "cache-2019-05-31";
+const CACHENAME = "cache-2019-05-31-v2";
 
 // never cache these resources, they change too frequently
 const URLBLACKLIST = [
@@ -11,6 +11,7 @@ const URLBLACKLIST = [
   "drewhans555.github.io/assets/javascript/darkmode.js",
   "drewhans555.github.io/assets/javascript/main.js",
   "drewhans555.github.io/assets/javascript/register-sw.js",
+  "drewhans555.github.io/assets/stylesheets/darkmode.css",
   "drewhans555.github.io/assets/stylesheets/main.css",
   "drewhans555.github.io/pages/about/",
   "drewhans555.github.io/pages/about/index.html",

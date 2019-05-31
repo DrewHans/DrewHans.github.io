@@ -4,6 +4,11 @@ body {
   color: #fdfdfd;
 }
 
+a.btn-view-on-github {
+  color: white;
+  box-shadow: 0px 2px 5px 1px black;
+}
+
 .row-trapezoid {
   background-color: #343A40;
 }
