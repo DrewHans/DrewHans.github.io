@@ -1,0 +1,9 @@
+/* --- Override main.css Settings --- */
+body {
+  background-color: #1b1b1b;
+  color: #fdfdfd;
+}
+
+.row-trapezoid {
+  background-color: darkgray;
+}
