@@ -1,7 +1,6 @@
 /* --- darkmode.js --- */
 $(document).ready(function() {
 
-  const dark_mode_stylesheet_link = $('<link rel="stylesheet" href="/assets/stylesheets/darkmode.css" />');
   const supports_local_storage = "localStorage" in window;
   const dark_mode_setting = "apply-dark-mode";
 
@@ -9,7 +8,7 @@ $(document).ready(function() {
   if (supports_local_storage) {
     const apply_dark_mode = localStorage.getItem(dark_mode_setting);
     if (apply_dark_mode === true) {
-      $("head").append(dark_mode_stylesheet_link);
+      $("#darkmode-stylesheet").prop("disabled", false);
     }
   } else {
     $("#dark-mode-toggle").hide();
@@ -22,11 +21,11 @@ $(document).ready(function() {
 
       if (apply_dark_mode === false || apply_dark_mode === null) {
         // turn dark mode on
-        $("head").append(dark_mode_stylesheet_link);
+        $("#darkmode-stylesheet").prop("disabled", false);
         localStorage.setItem(dark_mode_setting, true);
       } else {
         // turn dark mode off
-        dark_mode_stylesheet_link.remove();
+        $("#darkmode-stylesheet").prop("disabled", true);
         localStorage.setItem(dark_mode_setting, false);
       }
 
