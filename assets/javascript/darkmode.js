@@ -1,18 +1,18 @@
 /* --- darkmode.js --- */
-$(document).ready(function() {
+const supports_local_storage = "localStorage" in window;
+const dark_mode_setting = "apply-dark-mode";
 
-  const supports_local_storage = "localStorage" in window;
-  const dark_mode_setting = "apply-dark-mode";
-
-  /* --- on page load --- */
-  if (supports_local_storage) {
-    const apply_dark_mode = localStorage.getItem(dark_mode_setting);
-    if (apply_dark_mode === "true") {
-      $("#darkmode-stylesheet").prop("disabled", false);
-    }
-  } else {
-    $("#dark-mode-toggle").hide();
+/* --- on page load --- */
+if (supports_local_storage) {
+  const apply_dark_mode = localStorage.getItem(dark_mode_setting);
+  if (apply_dark_mode === "true") {
+    $("#darkmode-stylesheet").prop("disabled", false);
   }
+} else {
+  $("#dark-mode-toggle").hide();
+}
+
+$(document).ready(function() {
 
   /* --- on darkmode button press --- */
   $("#dark-mode-toggle").click(function() {
