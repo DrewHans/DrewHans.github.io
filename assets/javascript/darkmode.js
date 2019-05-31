@@ -6,9 +6,10 @@ const dark_mode_setting = "apply-dark-mode";
 if (supports_local_storage) {
   const apply_dark_mode = localStorage.getItem(dark_mode_setting);
   if (apply_dark_mode === "true") {
-    $("#darkmode-stylesheet").prop("disabled", false);
+    document.getElementById("#darkmode-stylesheet").disabled = false;
   }
 } else {
+  document.getElementById("#darkmode-stylesheet").disabled = true;
   $("#dark-mode-toggle").hide();
 }
 
@@ -21,11 +22,11 @@ $(document).ready(function() {
 
       if (apply_dark_mode === "false" || apply_dark_mode === null) {
         // turn dark mode on
-        $("#darkmode-stylesheet").prop("disabled", false);
+        document.getElementById("#darkmode-stylesheet").disabled = false;
         localStorage.setItem(dark_mode_setting, "true");
       } else {
         // turn dark mode off
-        $("#darkmode-stylesheet").prop("disabled", true);
+        document.getElementById("#darkmode-stylesheet").disabled = true;
         localStorage.setItem(dark_mode_setting, "false");
       }
 
