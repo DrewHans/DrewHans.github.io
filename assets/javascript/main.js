@@ -1,11 +1,12 @@
 /* --- main.js --- */
-$(document).ready(function() {
 
-  /* --- last-update text --- */
-  if($("#last-update").length) {
-      document.getElementById("last-update").innerHTML =
-          "&copy; Drew Hans, last update " + document.lastModified + "";
-  }
+/* --- last-update text --- */
+if($("#last-update").length) {
+    document.getElementById("last-update").innerHTML =
+        "&copy; Drew Hans, last update " + document.lastModified + "";
+}
+
+$(document).ready(function() {
 
   /* --- Return-To-Top button --- */
   // when page is scrolled
