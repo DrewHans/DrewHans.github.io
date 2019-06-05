@@ -1,8 +1,8 @@
 /* --- main.js --- */
 console.info("Hi friend!");
 console.info("If you want to view the code for this website, you can \
-  find the full source on my GitHub at: \n \
-  https://github.com/DrewHans555/DrewHans555.github.io");
+find the full source on my GitHub at:\n\
+https://github.com/DrewHans555/DrewHans555.github.io");
 console.info("I hope you liked my site. Thanks for visiting :)");
 
 /* --- last-update text --- */
