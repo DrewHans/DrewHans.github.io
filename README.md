@@ -1,7 +1,7 @@
-# DrewHans555.github.io
+# DrewHans.github.io
 
 [![GitHub][shield-img-license]](LICENSE)
-[![Website][shield-img-website]](https://drewhans555.github.io/)
+[![Website][shield-img-website]](https://drewhans.github.io/)
 
 My personal hub on the web.
 
@@ -42,5 +42,5 @@ Progressive Web App compliance can by audited with Google Chrome's [Lighthouse](
 * [jQuery](https://jquery.com/) 3.4.1
 * [Popper.js](https://popper.js.org/) 1.14.7
 
-[shield-img-license]: https://img.shields.io/github/license/DrewHans555/DrewHans555.github.io.svg
-[shield-img-website]: https://img.shields.io/website/https/drewhans555.github.io.svg
+[shield-img-license]: https://img.shields.io/github/license/DrewHans/DrewHans.github.io.svg
+[shield-img-website]: https://img.shields.io/website/https/drewhans.github.io.svg

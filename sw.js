@@ -4,19 +4,19 @@ const CACHENAME = "cache-2019-06-03-v1";
 
 // never cache these resources, they change too frequently
 const URLBLACKLIST = [
-  "drewhans555.github.io/",
-  "drewhans555.github.io/index.html",
-  "drewhans555.github.io/manifest.json",
-  "drewhans555.github.io/sw.js",
-  "drewhans555.github.io/assets/javascript/darkmode.js",
-  "drewhans555.github.io/assets/javascript/main.js",
-  "drewhans555.github.io/assets/javascript/register-sw.js",
-  "drewhans555.github.io/assets/stylesheets/darkmode.css",
-  "drewhans555.github.io/assets/stylesheets/main.css",
-  "drewhans555.github.io/pages/about/",
-  "drewhans555.github.io/pages/about/index.html",
-  "drewhans555.github.io/pages/projects/",
-  "drewhans555.github.io/pages/projects/index.html"
+  "drewhans.github.io/",
+  "drewhans.github.io/index.html",
+  "drewhans.github.io/manifest.json",
+  "drewhans.github.io/sw.js",
+  "drewhans.github.io/assets/javascript/darkmode.js",
+  "drewhans.github.io/assets/javascript/main.js",
+  "drewhans.github.io/assets/javascript/register-sw.js",
+  "drewhans.github.io/assets/stylesheets/darkmode.css",
+  "drewhans.github.io/assets/stylesheets/main.css",
+  "drewhans.github.io/pages/about/",
+  "drewhans.github.io/pages/about/index.html",
+  "drewhans.github.io/pages/projects/",
+  "drewhans.github.io/pages/projects/index.html"
 ];
 
 // install event

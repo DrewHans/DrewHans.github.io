@@ -4,7 +4,7 @@ https://keybase.io/drewhans555
 
 I hereby claim:
 
-  * I am an admin of https://drewhans555.github.io
+  * I am an admin of https://drewhans.github.io
   * I am drewhans555 (https://keybase.io/drewhans555) on keybase.
   * I have a public key ASDn6dYQcMxonK1e9CxFZEgkUz3ZY2ft6F3992JcdM2RFAo
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "R9/+GxRwuWPJWM1rYQnpBdKZ",
-      "hostname": "drewhans555.github.io",
+      "hostname": "drewhans.github.io",
       "protocol": "https:"
     },
     "type": "web_service_binding",
