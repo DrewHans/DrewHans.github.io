@@ -6,7 +6,7 @@ I hereby claim:
 
   * I am an admin of https://drewhans.github.io
   * I am drewhans555 (https://keybase.io/drewhans555) on keybase.
-  * I have a public key ASDn6dYQcMxonK1e9CxFZEgkUz3ZY2ft6F3992JcdM2RFAo
+  * I have a public key with fingerprint A899 BEB4 F070 8419 B16F  929E 6618 1B17 1F49 9DE7
 
 To do so, I am signing this object:
 
@@ -14,39 +14,71 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "012000066a861433b433d2da562ef82086efe88fb1bc700902237d15b7984be932f10a",
+      "fingerprint": "a899beb4f0708419b16f929e66181b171f499de7",
       "host": "keybase.io",
-      "kid": "0120e7e9d61070cc689cad5ef42c45644824533dd96367ede85dfdf7625c74cd91140a",
+      "key_id": "66181b171f499de7",
+      "kid": "0101cfd819ad806ea179250e9d6f0d1e6671e721a3249d81206ae99e67f9e69e2f350a",
       "uid": "5efc87253415cfe805e52059d816d519",
       "username": "drewhans555"
     },
     "merkle_root": {
-      "ctime": 1558695735,
-      "hash": "9a6ad3e36dfaf3b9aabee75d1ce5c7daf063c7386053af0ed45b9df187e33e6f9d9560e2cae4971755e80d76f369871e3c081acc4674262071353d98964abf63",
-      "hash_meta": "83b945059c21ea8fc6a1392db603e9533002856042532ddc06a9c1cd82d139c2",
-      "seqno": 5439690
+      "ctime": 1619035320,
+      "hash_meta": "58638c57da64ae8f2145302985a6ff8ce4b1484cfd62732da72dcddf44db69d6",
+      "seqno": 19702902
+    },
+    "revoke": {
+      "sig_ids": [
+        "cf918ce8cf4369f852f4f3cac2544518c0b7a9ef9bdf73af46f4f6a82506b8d00f"
+      ]
     },
     "service": {
-      "entropy": "R9/+GxRwuWPJWM1rYQnpBdKZ",
       "hostname": "drewhans.github.io",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 2
+    "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "4.0.0"
-  },
-  "ctime": 1558695746,
-  "expire_in": 504576000,
-  "prev": "e26eebd9412b25fd6ed014c33a3c5572d564759217dbfab7ee44c206bca51994",
-  "seqno": 19,
+  "ctime": 1619035357,
+  "expire_in": 157680000,
+  "prev": "285aa713d8f7abfbad6e25f8e182a341a1835da828b847b48141ef6a99dbca83",
+  "seqno": 37,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg5+nWEHDMaJytXvQsRWRIJFM92WNn7ehd/fdiXHTNkRQKp3BheWxvYWTESpcCE8Qg4m7r2UErJf1u0BTDOjxVctVkdZIX2/q37kTCBrylGZTEIH4DVG85BUhb5T1hmWxOMQizJ0Fuazcp7m3o2R6CPNnjAgHCo3NpZ8RAMrQ2zG9S2JeIxB3OutsVFIWfXcvKJZIFe1xdqvJkaM5NyB+O75gvk/V2gWW+6m0gCQ90aEcrEBhxr7vdbYMfAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMaGSbusQ2TOBq+HGHZuW0an+Um/AozwFBsPn6Yynoj3o3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMQEAnicbVN9UBVVFH98qEBqit/ihK5ZWoh77+7dvftSkQlNmlIjvwjzeXfvvbCB
+7732LQgypI1MY+hkyZQI2mhlDozjRCaayUhGY8kokx9pAoZO6OAfmRlY4lR3KacZ
+p53Z3dk95/zO7/c75zYPifElRPGxSWOSM3dej2o5vr7Qt2p9eUepZIZoieQvlfJZ
+/4sVUBZxA/k2lfySDKAsLk0jWAOqopjippASpEHGMZSxxjjDmJvAtHRZNmQIFZ0C
+ZOoGVk1mKJADmUgpEreDucwJO3bQFbAEG4bJTJXLuoxVYJhA4wY0mKYBDEygA64a
+BmW6KMwLRbwKQc4kEZZqh8Q/8RHop/c/+fd5y8DiFAODUCxrjADdgEhmBtW4TIFo
+pAOmQ0AUqBoiDcoaYYYgoHPxMBjkCurnXdgPhxi3sA6RogJkCcEyYgjKyKvUKAKG
+lxhhTpCsZiKbOmxNHglGEEJSWYq0mjn5BSzghEKu56/l2l4W0IAhK0iBstBIInmB
+1cwlXiusKdhCOiWaShjmEKhIkaGBEdE4xxZTTaBiVYjToK6IUeiQWpRyVaWmJuQJ
+KhH2ajAkOhi6qJOhoOCwolA+87pH7FxhXUTy50gWN4DAwxZXFc3gGEGucsUiFkSq
+ikRINnViMG6YlOsK4aom4mIRhI+aiaksc+nlMq+bU2Rb/eDerB7wIDXXdvMKzX/m
+FnZCbsgKFYh4nuuGI37PHrck7BWsYWbgX6iAaQep2BdRUcSciB0KCjEi8wHnkJ4i
+seKw7bCA7WUgXcPesnp9WJGAhMIzogOFYq4Tk5uEagwijhnAkIhREoAVRIUgbGJV
+N1UMVMCEQrFKpkWw8p+VimjlklyBKfwLErfQYVLZ8S9XxPqiEnwDB0R7B8mXED/s
+/vFaUjLMVxVOk/va7Omv8ZL1e6Lnd7ZO3XOme3Rsfc3M2xeiXhlz+E7p5+Uf114v
+Lq74pvav0z1nDpGKzqSWi2u72srYW8mPtmS9X5+7qa3netsfXRsWxh5NG3IoI+0U
++bbSfXhheUl2HbpxrP7F6lEb5tfExMUsqctZ9+YbPc8k3dw96M7GzmrX/WXznhNT
+3VnfhePG/7ap+trizCA6kNg1+Ies0pjeR3Ia1vgrM+ymuujbLcdmtjx9qKrgbN+N
+H4srrm3/cMJ5NbkppWzW0i3tP2dErg2fnLPq8sxFI9+ed3Rg6k852X/G3/LtX9a+
+M7WILk2fuLzmg3WJEy8cXpk+pbVnV+jXG5s7tmoVV2rvXZJfqE/cMf7AhOMru7Lz
+4hedfDe6ws0aerq96fteKdE3d/eMhZOcE0nLZrxT++SA1s6yTycfbJhwpPn1ooe+
+rprePGm+eTj7QMLuxoa4FXOJNHfO2cAT3VNGnI+L8n/RPSexeUdn77oCUjwvc+eV
+/U13q9O5/6uTDQXDB61tXvCJc7lh1LNbj/SO7PY3zsncKPVcPHtr8R29fnbr1vdK
+a2jyttnTuqfZ7RGw915G45Hf9VOXfGkLnHNZjw2tHLcpfmTZ4/ClizdXDh63orak
+b1Flx/JzE2nVc7FTLpRuH/38XbsPnLx6+uC+jsT0p7ZIY4q3jT01Im7frjTYfrAi
+fd5Hny1r3HV1eN/eupQhvcf+BsQvAIE=
+=/Ix0
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -54,3 +86,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/drewhans555
 
 ==================================================================
+
