@@ -1,9 +1,9 @@
 /* --- service worker --- */
 
-const CACHENAME = "cache-2019-06-03-v1";
+const CACHENAME = "cache-2021-11-20-v1";
 
 // never cache these resources, they change too frequently
-const URLBLACKLIST = [
+const URLDENYLIST = [
   "drewhans.github.io/",
   "drewhans.github.io/index.html",
   "drewhans.github.io/manifest.json",
@@ -39,30 +39,30 @@ self.addEventListener("fetch", function(event) {
       if (response !== undefined) {
         // resource is in cache, return it
         return response;
-      } else {
-        // resource is not in cache, request it from the network
-        return fetch(event.request)
-          .then(function(response) {
-            let resourceurl = event.request.url
-              .replace("http://", "")
-              .replace("https://", "");
-
-            if (URLBLACKLIST.indexOf(resourceurl) === -1) {
-              // resource is not blacklisted & should be put in cache
-              let responseStreamClone = response.clone();
-              caches.open(CACHENAME).then(function(cache) {
-                cache.put(event.request, responseStreamClone);
-              });
-            }
-
-            // return the fetched resource
-            return response;
-          })
-          .catch(function() {
-            // network is not available, provide a default fallback resource
-            return caches.match("/assets/images/404.gif");
-          });
       }
+
+      // resource is not in cache, request it from the network
+      return fetch(event.request)
+        .then(function(response) {
+          let resourceurl = event.request.url
+            .replace("http://", "")
+            .replace("https://", "");
+
+          if (URLDENYLIST.indexOf(resourceurl) === -1) {
+            // resource is not blacklisted & should be put in cache
+            let responseStreamClone = response.clone();
+            caches.open(CACHENAME).then(function(cache) {
+              cache.put(event.request, responseStreamClone);
+            });
+          }
+
+          // return the fetched resource
+          return response;
+        })
+        .catch(function() {
+          // network is not available, provide a default fallback resource
+          return caches.match("/assets/images/404.gif");
+        });
     })
   );
 });
