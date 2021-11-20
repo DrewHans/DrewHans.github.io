@@ -34,37 +34,35 @@ self.addEventListener("install", function(event) {
 // fetch event
 // fires every time any resource controlled by sw is fetched
 self.addEventListener("fetch", function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      if (response !== undefined) {
-        // resource is in cache, return it
+  event.respondWith(caches.match(event.request).then(function(response) {
+    if (response !== undefined) {
+      // resource is in cache, return it
+      return response;
+    }
+
+    // resource is not in cache, request it from the network
+    return fetch(event.request)
+      .then(function(response) {
+        let resourceurl = event.request.url
+          .replace("http://", "")
+          .replace("https://", "");
+
+        if (URLDENYLIST.indexOf(resourceurl) === -1) {
+          // resource is not blacklisted & should be put in cache
+          let responseStreamClone = response.clone();
+          caches.open(CACHENAME).then(function(cache) {
+            cache.put(event.request, responseStreamClone);
+          });
+        }
+
+        // return the fetched resource
         return response;
-      }
-
-      // resource is not in cache, request it from the network
-      return fetch(event.request)
-        .then(function(response) {
-          let resourceurl = event.request.url
-            .replace("http://", "")
-            .replace("https://", "");
-
-          if (URLDENYLIST.indexOf(resourceurl) === -1) {
-            // resource is not blacklisted & should be put in cache
-            let responseStreamClone = response.clone();
-            caches.open(CACHENAME).then(function(cache) {
-              cache.put(event.request, responseStreamClone);
-            });
-          }
-
-          // return the fetched resource
-          return response;
-        })
-        .catch(function() {
-          // network is not available, provide a default fallback resource
-          return caches.match("/assets/images/404.gif");
-        });
-    })
-  );
+      })
+      .catch(function() {
+        // network is not available, provide a default fallback resource
+        return caches.match("/assets/images/404.gif");
+      });
+  }));
 });
 
 // activate event
