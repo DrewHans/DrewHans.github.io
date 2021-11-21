@@ -1,6 +1,6 @@
 /* --- service worker --- */
 
-const CACHENAME = "cache-2021-11-20-v2";
+const CACHENAME = "cache-2021-11-20-v3";
 
 // never cache these resources, they change too frequently
 const URLDENYLIST = [
