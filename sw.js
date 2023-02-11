@@ -1,7 +1,7 @@
 /* --- service worker --- */
 
 // changing CACHENAME value will trigger a cache update
-const CACHENAME = "cache-2022-04-13-v1";
+const CACHENAME = "cache-2023-02-11-v1";
 
 // never cache these resources, they change too frequently
 const URLDENYLIST = [
