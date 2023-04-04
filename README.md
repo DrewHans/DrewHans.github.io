@@ -39,7 +39,7 @@ Progressive Web App compliance can by audited with Google Chrome's [Lighthouse](
 * [Bootstrap](https://getbootstrap.com/) 4.3.1
 * [FontAwesome](https://fontawesome.com/) 5.8.2
 * [Google Fonts](https://fonts.google.com/specimen/Roboto) - Roboto
-* [jQuery](https://jquery.com/) 3.4.1
+* [jQuery](https://jquery.com/) 3.6.4
 * [Popper.js](https://popper.js.org/) 1.14.7
 
 [shield-img-license]: https://img.shields.io/github/license/DrewHans/DrewHans.github.io.svg
